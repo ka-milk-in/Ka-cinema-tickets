@@ -3,6 +3,21 @@
     <head>
         <meta charset="UTF=8"/>
         <title>cinema-tickets</title>
+        <style>
+        td {
+            border: 1px solid #000;
+        }
+        th {
+            border: 1px solid #000;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        textarea{
+            resize: none;
+            height: 100px;
+        }
+        </style>
     </head>
     <body>
         <img src="1.png" alt="кинозал"/> 
@@ -11,16 +26,18 @@
             <span><a href="tel:+78003551256">+7 (800) 355 12 56</a></span>
             <span><a href="kino@innopolis.ru" title="ссылка на сайт">kino@innopolis.ru</a></span>
             <span>ул.Спортаковская д.1</span>
+            <span><button>Заказать звонок</button></span>
             <br>
-            <span>EVENT DETAILS</span>
-            <span>SPEAKERS </span>
-            <span>SPONSORS</span>
-            <span>PAST EVENTS</span>
-            <span>CONTACT</span>
+            <a href="#block1">Почему мы?</a>
+            <a href="#block2">Выберите фильм </a> 
+            <a href="#block3">Фильмы</a>
+            <a href="#block4"> Товары</a>
+            <a href="#block5">Отзывы</a>
         </header>
         <h1>Закажите билет в кино</h1>
         <p><strong>Всем покупателям подарок!</strong></p>
-        <div><strong>Добро пожаловать!</strong>  
+        <div>
+             <strong>Добро пожаловать!</strong>  
                 <div>
                     lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam minima
 ratione iusto repudiandae! Sint, et consequatur totam optio obcaecati
@@ -33,7 +50,7 @@ dolore eu fugiat nulla pariatur. Excepteur sint occaecat
 cupidatat non proident, sunt.
 </p></div>
 </div>
-<h2><strong>Почему мы?</strong></h2>
+<h2 id="block1"><strong>Почему мы?</strong></h2>
 <div>
     <img src="2.png" alt="кинозал"/>
     <strong>
@@ -100,14 +117,40 @@ ratione iusto repudiandae! Sint, et consequatur totam optio obcaecati
 voluptatem, culpa quod dolorum adipisci corrupti explicabo facilis
 veritatis modi cupiditate!
             </p></div>
-<h3><strong>
+<h3> <a name="block2"> <strong>
     Выберите фильм 
-</strong></h3>
-    <div>
-       <p>Начало сеанса <br> 10:00 <br> 12:00 <br> 14:00 <br> 16:00 </p>
-       <p>Название фильма <br> Человек-паук <br> Собачья жизнь 2<br> История игрушек 4<br> Люди в черном: Интэрнэшнл</p>
-        <p>Жанр <br> Фантастика, боевик, приключения<br> Фэнтэзи, драма, комедия<br> Мультфильм, фэнтэзи, комедия<br> Фантастика, боевик, комедия</p>
-    </div>
+</strong></h3> </a>
+    <table>
+        <thead>
+            <tr>
+                <th>Начало сеанса</th>
+                <th>Название фильма</th>
+                <th>Жанр</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>10:00</td>
+                <td>Человек-паук</td>
+                <td>Фантастика, боевик, приключения</td>
+            </tr>
+            <tr>
+                <td>12:00</td>
+                <td>Собачья жизнь 2</td>
+                <td>Фэнтэзи, драма, комедия</td>
+            </tr>
+            <tr>
+                <td>14:00</td>
+                <td>История игрушек 4</td>
+                <td>Мультфильм, фэнтэзи, комедия</td>
+            </tr>
+            <tr>
+                <td>16:00</td>
+                <td>Люди в черном: Интэрнэшнл</td>
+                <td>Фантастика, боевик, комедия</td>
+            </tr>
+        </tbody>
+    </table>
              <div>
                  lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam minima
 ratione iusto repudiandae! Sint, et consequatur totam optio obcaecati
@@ -141,7 +184,7 @@ risus at ultrices mi tempus. Facilisi cras fermentum odio eu feugiat
 pretium nibh. Eu nisl nunc mi ipsum. Nibh sit amet commodo nulla facilisi
 nullam vehicula ipsum.
 </p></div>
-<h4><strong>
+<h4 id="block3"><strong>
     Фильмы
 </strong></h4>
             <div>
@@ -172,7 +215,7 @@ veritatis modi cupiditate!
 <img src="17.png" alt="картинка"/>
 <img src="18.png" alt="картинка"/>
 </div>
-<h5><strong>
+<h5 id="block4"><strong>
     Товары
 </strong></h5>
         <div>
@@ -188,7 +231,7 @@ veritatis modi cupiditate!
 <img src="у.png" alt="картинка"/>
 <div>Постер Мстители</div>
 </div>
-<h6><strong>
+<h6 id="block5"><strong>
     Отзывы
 </strong>
 </h6>
@@ -227,12 +270,24 @@ veritatis modi cupiditate!</div></div>
 <br>
 <div>
     <img src="ш.png" alt="картинка"/>
+    <br>
 <strong>Обратная связь</strong>
-<p>Полное имя</p>
-<p>Номер места</p>
-<p>Напишите свой отзыв</p>
-<div>Я согласен на обработку своих персональных данных</div>
-<div>Послать</div>
+<form action="/order">
+<input type="text" required placeholder="Полное имя" name="name">
+<div>
+    <select name="">
+       <option value="">Номер места</option>
+       <option value="1">1</option>
+       <option value="2">2</option>
+    </select>
+</div> 
+<textarea name="" id="" placeholder="Напишите свой отзыв"></textarea>
+<div>
+<input type="checkbox" id="checkbox">
+<label for="checkbox">Я согласен на обработку своих персональных данных</label>
+</div>
+<input type="submit" value="Послать">
+</form>
 </div>
 <img src="щ.png" alt="картинка"/>
 <footer>
@@ -242,11 +297,11 @@ veritatis modi cupiditate!</div></div>
          quae quasi esse laudantium earum commodi sit necessitatibus officia deleniti?</p>
     <p>
         <strong>SITE</strong> <br>
-        EVENT DETAILS<br>
-        SPEAKERS <br>
-        SPONSORS<br>
-        PAST EVENTS<br>
-        CONTACT<br>
+        <a href="#block1">Почему мы</a><br>
+        <a href="#block2">Выберите фильм </a> <br>
+        <a href="#block3">Фильмы</a><br>
+        <a href="#block4"> Товары</a><br>
+         <a href="#block5">Отзывы</a>
     </p>  
     <p>
         <strong>CONTACT</strong> <br>
@@ -274,6 +329,26 @@ veritatis modi cupiditate!</div>
 Продюсер Матильда Аппелин, Рене Эзра, Томас Радур, ..<br>
 Оператор Стурла Брандт Грёвлен<br>
 Композитор Руне Тонсгор Серенсен<br>
+Художник Сорен Шварцберг, Луиз Ниссен <br>
 Время <strong> 104 мин. / 01:44 </strong></div></div>
+<div>
+    <img src="18.png" alt="картинка"/>
+<strong>Живое</strong>
+    <br>
+<span><strong>25 Ноябрь 2019</strong></span>
+<span><strong>2.5K views</strong></span>
+<span><strong>200 likes</strong></span>
+<div>lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam minima
+ratione iusto repudiandae! Sint, et consequatur totam optio obcaecati
+voluptatem, culpa quod dolorum adipisci corrupti explicabo facilis
+veritatis modi cupiditate!</div>
+<div>Страна Дания<br>
+Режиссер Михаэль Ноер<br>
+Сценарий Джеспер Финк, Михаэль Ноep<br>
+Продюсер Матильда Аппелин, Рене Эзра, Томас Радур, ..<br>
+Оператор Стурла Брандт Грёвлен<br>
+Композитор Руне Тонсгор Серенсен<br>
+Художник Сорен Шварцберг, Луиз Ниссен <br>
+Время <strong> 104 мин. / 01:44 </strong></div>
     </body>
-</html>
+</html> 
