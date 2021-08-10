@@ -344,23 +344,34 @@
         <p class="greenColor f-S25 f-w500">
             Обратная связь
         </p>
-        <form action="/order">
+        <form action="order.php">
             <input type="text" required placeholder="Полное имя" name="name" class="f-S15 f-w400">
             <div>
                 <select name="" class="f-S15 f-w400">
-                <option value="">Номер места</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
+                    <option value="">Номер места</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
                 </select>
             </div> 
-            <textarea name="" id="" placeholder="Напишите свой отзыв" class="f-S15 f-w400"></textarea>
+            <textarea name="" id="" placeholder="Напишите свой отзыв" class="f-S15 f-w400" required></textarea>
             <div>
             <input type="checkbox" id="checkbox">
             <label for="checkbox" class="f-S10 f-w400">
                 Я согласен на обработку своих персональных данных
             </label>
+            <br>
+            <input type="file"> 
+            <br>
+            <input type="email" id="email" pattern=".+@mail.ru" size="30" placeholder="Напишите свою почту" required> 
             </div>
-            <input type="submit" value="Послать">
+            <button type="submit">Заказать</button>
         </form>
 
     <img src="щ.png" alt="карта"/>
