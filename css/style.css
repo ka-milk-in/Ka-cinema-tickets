@@ -112,11 +112,65 @@ textarea{
 .grey2Back{
     background-color: #4C4D4F;
 }
+.block1{
+    min-height: 100vh;
+    background-color: #FFFFFF;
+    background-image: url(/1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.block1_row{
+    width: 100vw;
+}
+.conteiner-wide{
+    padding: 0 15px;
+    max-width: 940px;
+}
+.block1_col1{
+    float: left;
+    /* padding: 0 22px 0 15px; */
+    width: 21%;
+    margin: 0;
+}
+.block1_col2{
+    float: left;
+    width: 79%;
+    /* padding: 0 15px 0 22px; */
+    margin: 0;
+
+}
+.block1_tel,
+.block1_mail,
+.block1_address,
+.block1_lang{
+    display: inline-block;
+    color:#FFFFFF;
+}
+.block1_call{
+    display: inline-block;
+}
+.block1_tel,
+.block1_mail,
+.block1_address,
+.block1_call{
+    margin-right: 20px;
+}
+.block1_col2-1,
+.block1_col2-2,
+.block1_col2-3,
+.block1_col2-4,
+.block1_col2-5{
+    display: inline-block;
+    color:#FFFFFF;
+    margin-right: 60px;
+}
 .col{
     float: none;
     box-sizing: border-box;
     width: 33,33%;
     padding: 0 27,5px;
+    margin: 0 auto;
 }
 .row{
     padding-left: -27.5px;
