@@ -1,0 +1,22 @@
+body{
+    border: 1px solid red;
+}
+body:not(#pagewrapper) {
+    font-size: 20px; 
+}
+p{
+    border:inherit !important;
+    border:initial;
+}
+h1{
+    color:aqua;
+    border:inherit;
+    border:unset;
+}
+body #pagewrapper {
+    color: green; 
+}
+.content{
+    color:sandybrown;
+}
+
