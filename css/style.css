@@ -6,53 +6,53 @@ textarea{
     height: 100px;
 }
 @font-face {
-    font-family: 'IBM-Plex-Sans';
+    font-family: 'IBM-Plex-Sans1';
     src: url('../fonts/IBMPlexSans-Medium.ttf');
     font-style: normal;
     font-weight: 500;
 } 
 @font-face {
-    font-family: 'IBM-Plex-Sans';
+    font-family: 'IBM-Plex-Sans2';
     src: url('../fonts/IBMPlexSans-Bold.ttf');
     font-style: normal;
     font-weight: 700;
 }
 @font-face {
-    font-family: 'IBM-Plex-Sans';
+    font-family: 'IBM-Plex-Sans3';
     src: url('../fonts/IBMPlexSans-Thin.ttf');
     font-style: normal;
     font-weight: 100;
 }
 @font-face {
-    font-family: 'IBM-Plex-Sans';
+    font-family: 'IBM-Plex-Sans4';
     src: url('../fonts/IBMPlexSans-Regular.ttf');
     font-style: normal;
     font-weight: 400;
 }
 @font-face {
-    font-family: 'IBM-Plex-Sans';
+    font-family: 'IBM-Plex-Sans5';
     src: url('../fonts/IBMPlexSans-SemiBold.ttf');
     font-style: normal;
     font-weight: 600;
 }
 .f-w400{
-    font-family: 'IBM-Plex-Sans'; 
+    font-family: 'IBM-Plex-Sans4'; 
     font-weight: 400;
 }
 .f-w500{
-    font-family: 'IBM-Plex-Sans'; 
+    font-family: 'IBM-Plex-Sans1'; 
     font-weight: 500;
 }
 .f-w100{
-    font-family: 'IBM-Plex-Sans'; 
+    font-family: 'IBM-Plex-Sans3'; 
     font-weight: 100;
 }
 .f-w600{
-    font-family: 'IBM-Plex-Sans'; 
+    font-family: 'IBM-Plex-Sans5'; 
     font-weight: 600;
 }
 .f-w700{
-    font-family: 'IBM-Plex-Sans'; 
+    font-family: 'IBM-Plex-Sans2'; 
     font-weight: 700;
 }
 .f-S10{
@@ -225,4 +225,7 @@ textarea{
 }
 .text-center{
     text-align: center;
+}
+.text-left{
+    text-align: left;
 }
