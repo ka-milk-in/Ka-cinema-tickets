@@ -4,6 +4,10 @@
         <meta charset="UTF=8"/>
         <title>cinema-tickets</title>
         <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/layout.css">
+        <link rel="stylesheet" href="./css/font.css"> 
+        <link rel="stylesheet" href="./css/grid.css">
+        <link rel="stylesheet" href="./css/reset.css">
     </head>
     <body>
         <div class="block1">
@@ -11,15 +15,22 @@
                 <header class="header-block1">
                     <div class="block1_row">
                         <span class="block1_col1">
-                            <a class="logo" href="https://innopolis.com" target="_blank"  title="logo innopolis"><img src="logo.png" alt="logo innopolis"/></a>
+                            <a class="logo" href="https://innopolis.com" target="_blank"  title="logo innopolis"><img src="img/logo.png" alt="logo innopolis"/></a>
                         </span>
                         <span class="f-S12 f-w500 block1_col2">
                             <div class="block1_col2-line">
-                                <a class="block1_tel" href="tel:+78003551256" target="_blank">+7 (800) 355 12 56</a>
-                                <a class="block1_mail" href="kino@innopolis.ru" title="ссылка на сайт">kino@innopolis.ru</a>
-                                <p class="block1_address">ул.Спортаковская д.1</p>
-                                <div class="block1_call"><button>Заказать звонок</button></div>
-                                <div class="block1_lang"><select name="">
+                                <a class="block1_tel link-white" href="tel:+78003551256" target="_blank">+7 (800) 355 12 56</a>
+                                <a class="block1_mail link-white" href="kino@innopolis.ru" title="ссылка на сайт">kino@innopolis.ru</a>
+                                <p class="block1_address link-white">ул.Спортаковская д.1</p>
+                                <a href="#" class="block1_call">
+                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.67222 7.98889C4.1 7.18333 2.81111 5.9 2.01111 4.32778L3.12371 3.49804C3.44322 3.25977 3.59072 2.85451 3.49912 2.4666L3.09853 0.770184C2.99196 0.318844 2.58905 0 2.1253 0H0.555556C0.25 0 0 0.25 0 0.555556C0 5.77222 4.22778 10 9.44444 10C9.75 10 10 9.75 10 9.44444V7.87332C10 7.4102 9.68201 7.00767 9.23146 6.90048L7.53545 6.49696C7.14653 6.40442 6.73987 6.55242 6.50139 6.87328L5.67222 7.98889Z" fill="#333333"/>
+                                    </svg>
+                                    <span>
+                                        Заказать звонок
+                                    </span>
+                                </a>
+                                <div class="block1_lang link-white"><select name="">
                                     <option value="ru">ru</option>
                                     <option value="en">en</option>
                                 </select></div>
@@ -27,11 +38,11 @@
                     
                             <nav class="block1_col2-nav">
                                 <div sclass="f-S12 f-w500">
-                                    <a class="block1_col2-1" href="#block1">Почему мы?</a>
-                                    <a class="block1_col2-2" href="#block2">Выберите фильм </a>
-                                    <a class="block1_col2-3" href="#block3">Фильмы</a>
-                                    <a class="block1_col2-4" href="#block4"> Товары</a>
-                                    <a class="block1_col2-5" href="#block5">Отзывы</a>
+                                    <a class="block1_col2-1 link-white link-white_big" href="#block1">Почему мы?</a>
+                                    <a class="block1_col2-2 link-white link-white_big" href="#block2">Выберите фильм </a>
+                                    <a class="block1_col2-3 link-white link-white_big" href="#block3">Фильмы</a>
+                                    <a class="block1_col2-4 link-white link-white_big" href="#block4"> Товары</a>
+                                    <a class="block1_col2-5 link-white link-white_big" href="#block5">Отзывы</a>
                                 </div> 
                             </nav>
                         </span>
@@ -44,16 +55,16 @@
             </div>
             </div>
         </div>
-
-    <section> 
-        <p class="f-S33 f-w600">Добро пожаловать!</p>
-            <p class="f-S11 f-w400">
+<div class="container1">
+    <section class="block2_inner"> 
+        <p class="welcome_name">Добро пожаловать!</p>
+            <p class="welcome_text">
                 lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam minima
                 ratione iusto repudiandae! Sint, et consequatur totam optio obcaecati
                 voluptatem, culpa quod dolorum adipisci corrupti explicabo facilis
                 veritatis modi cupiditat
             </p>
-            <p class="f-S11 f-w400">
+            <p class="welcome_text">
                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
                 dolore eu fugiat nulla pariatur. Excepteur sint occaecat
                 cupidatat non proident, sunt.
@@ -62,8 +73,8 @@
 
     <h2 id="block1" class="f-S48 greenColor f-w500">Почему мы?</h2>
     <div class="row">
-        <div class="col">
-            <img src="2.png" alt="большие экраны"/>
+        <div class="col inline-b">
+            <img src="img/2.png" alt="большие экраны"/>
             <p class="f-S20 f-w600">
             Большие экраны
             </p>
@@ -74,8 +85,8 @@
                     veritatis modi cupiditate!
                 </p>
         </div>
-        <div class="col">
-            <img src="3.png" alt="объемный звук"/>
+        <div class="col inline-b">
+            <img src="img/3.png" alt="объемный звук"/>
             <p class="f-S20 f-w600">
             Объемный звук
             </p>
@@ -86,8 +97,8 @@
                     veritatis modi cupiditate!
                 </p>
         </div>
-        <div class="col">
-            <img src="4.png" alt="удобные кресла"/>
+        <div class="col inline-b">
+            <img src="img/4.png" alt="удобные кресла"/>
             <p class="f-S20 f-w600">
             Удобные кресла
             </p>
@@ -100,8 +111,8 @@
         </div>
     </div>
     <div class="row">
-        <div class="col">
-            <img src="5.png" alt="уютная атмосфера"/>
+        <div class="col inline-b">
+            <img src="img/5.png" alt="уютная атмосфера"/>
             <p class="f-S20 f-w600">
             Уютная атмосфера
             </p>
@@ -113,8 +124,8 @@
                 </p>
         </div>
         
-        <div class="col">
-            <img src="6.png" alt="полное погружение"/>
+        <div class="col inline-b">
+            <img src="img/6.png" alt="полное погружение"/>
             <p class="f-S20 f-w600">
             Полное погружение
             </p>
@@ -125,8 +136,8 @@
                     veritatis modi cupiditate!
                 </p>
         </div>
-        <div class="col">
-            <img src="7.png" alt="на заднем ряду"/>
+        <div class="col inline-b">
+            <img src="img/7.png" alt="на заднем ряду"/>
             <p class="f-S20 f-w600">
             Поцелуи на заднем ряду
             </p>
@@ -138,71 +149,93 @@
                 </p>
         </div>
     </div>
+</div>
 
     <div class="container1">
         <h3 id="block2" class="f-S48 greenColor f-w500">
             Выберите фильм
         </h3>
-        <table> 
+        <table class="table"> 
             <thead>
-                <tr class="text-left"> 
-                    <th>
-                        <a href="#" class="table__row1 table__row1-cell1 greenBack whiteColor f-S20  f-w600">
+                <tr class="table_header_row"> 
+                    <th class="table_header_cell">
+                        
+                    </th>
+                    <th class="table_header_cell">
+                        <a href="#">
                             Начало сеанса
+                            <svg width="9" height="5" viewBox="0 0 9 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.49182 0.5L8.49182 5H0.491821L4.49182 0.5Z" fill="white"/>
+                            </svg>
                         </a>
                     </th>
-                    <th>
-                        <a href="#" class="greenBack whiteColor table__row2-cell1 f-S20  f-w600">
+                    <th class="table_header_cell">
+                        <a href="#">
                             Название фильма
                         </a>
+                        <svg width="9" height="5" viewBox="0 0 9 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.49182 0.5L8.49182 5H0.491821L4.49182 0.5Z" fill="white"/>
+                        </svg>
                     </th>
-                    <th class="greenBack whiteColor table__row3-cell1 f-S20  f-w600">
+                    <th class="table_header_cell ">
                         Жанр
                     </th>
                 </tr>
             </thead>
             <tbody>
-                <tr class="f-S14  f-w400 text-left">
-                    <td class="table__row1 table__row1-cell2345 grey1Back  whiteColor table__cell2345">
+                <tr class="table_text">
+                    <td class="table_checkmark"><svg width="11" height="9" viewBox="0 0 11 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.60581 6.79378L1.46056 3.93033L0.787354 4.66979L4.70255 8.23421L10.8223 0.94099L10.0562 0.298203L4.60581 6.79378Z" fill="white"/>
+                    </svg></td>
+                    <td>
                         10:00
                     </td>
-                    <td class="grey1Back whiteColor table__row2-cell2">
+                    <td>
                         Человек-паук
                     </td>
-                    <td class="grey1Back whiteColor table__row3-cell2">
+                    <td>
                         Фантастика, боевик, приключения
                     </td>
                 </tr>
-                <tr class="f-S14  f-w400 text-left">
-                    <td class="table__row1 grey2Back whiteColor table__cell2345" >
+                <tr class="table_text table_text-color">
+                    <td class="table_checkmark table_checkmark-color"><svg width="11" height="9" viewBox="0 0 11 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.60581 6.79378L1.46056 3.93033L0.787354 4.66979L4.70255 8.23421L10.8223 0.94099L10.0562 0.298203L4.60581 6.79378Z" fill="white"/>
+                    </svg></td>
+                    <td>
                         12:00
                     </td>
-                    <td class="grey2Back whiteColor">
+                    <td>
                         Собачья жизнь 2
                     </td>
-                    <td class="grey2Back whiteColor">
+                    <td>
                         Фэнтэзи, драма, комедия
                     </td>
                 </tr>
-                <tr class="f-S14  f-w400 text-left">
-                    <td class="table__row1 grey1Back whiteColor table__cell2345">
+                <tr class="table_text">
+                    <td class="table_checkmark"><svg width="11" height="9" viewBox="0 0 11 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.60581 6.79378L1.46056 3.93033L0.787354 4.66979L4.70255 8.23421L10.8223 0.94099L10.0562 0.298203L4.60581 6.79378Z" fill="white"/>
+                    </svg></td>
+                    <td>
                         14:00
                     </td>
-                    <td class="grey1Back whiteColor">
+                    <td>
                         История игрушек 4
-                    </td>
-                    <td class="grey1Back whiteColor">
+                     </td>
+                    <td>
                         Мультфильм, фэнтэзи, комедия
                     </td>
                 </tr>
-                <tr class="f-S14  f-w400 text-left">
-                    <td class="table__row1 grey2Back whiteColor table__cell2345 table__row1-cell5">
+                <tr class="table_text table_text-color">
+                    <td class="table_text_row1 table_checkmark"><svg width="11" height="9" viewBox="0 0 11 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.60581 6.79378L1.46056 3.93033L0.787354 4.66979L4.70255 8.23421L10.8223 0.94099L10.0562 0.298203L4.60581 6.79378Z" fill="white"/>
+                    </svg></td>
+                    <td>
                         16:00
                     </td>
-                    <td class="grey2Back whiteColor">
+                    <td>
                         Люди в черном: Интэрнэшнл
                     </td>
-                    <td class="grey2Back whiteColor table__row3-cell5">
+                    <td class="table_text_row2">
                         Фантастика, боевик, комедия
                     </td>
                 </tr>
@@ -217,8 +250,8 @@
     </div>
 
     <div>
-        <img src="8.png" alt="касета"/>
-        <img src="9.png" alt="подарок"/>
+        <img src="img/8.png" alt="касета"/>
+        <img src="img/9.png" alt="подарок"/>
         <section>
             <p class="f-S48  f-w400">
             Подарок каждому!
@@ -261,7 +294,7 @@
         </p>       
     <div>
         <a href="https://www.kinopoisk.ru/film/522941/" target="_blank">
-            <img src="10.png" alt="выживш"/>
+            <img src="img/10.png" alt="выживш"/>
         </a>
         <p class="f-S29 f-w600">
                 Выживший
@@ -307,11 +340,11 @@
             ratione iusto repudiandae! Sint, et consequatur totam optio obcaecati
             voluptatem, culpa quod dolorum adipisci corrupti explicabo facilis
             veritatis modi cupiditate!
-            <img src="й.png" alt="кола"/>
+            <img src="img/й.png" alt="кола"/>
             <p class="f-S20  f-w600">Coca-cola</p>
-            <img src="ц.png" alt="брелоки"/>
+            <img src="img/ц.png" alt="брелоки"/>
             <p class="f-S20  f-w600">Брелок "Железный человек"</p>
-            <img src="у.png" alt="постер"/>
+            <img src="img/у.png" alt="постер"/>
             <p class="f-S20  f-w600">Постер "Мстители"</p>
         </div>
 
@@ -324,7 +357,7 @@
             voluptatem, culpa quod dolorum adipisci corrupti explicabo facilis
             veritatis modi cupiditate!
         </p>
-        <img src="е.png" alt="елена"/>
+        <img src="img/е.png" alt="елена"/>
             <p class="f-S15 f-w600">
                 Елена Еленова
             </p>
@@ -334,7 +367,7 @@
                     voluptatem, culpa quod dolorum adipisci corrupti explicabo facilis
                     veritatis modi cupiditate!
                 </p>
-        <img src="н.png" alt="борис"/>
+        <img src="img/н.png" alt="борис"/>
             <p class="f-S18  f-w600">
                 Борис Борисов
             </p>
@@ -344,7 +377,7 @@
                     voluptatem, culpa quod dolorum adipisci corrupti explicabo facilis
                     veritatis modi cupiditate!
                 </p>
-        <img src="г.png" alt="леонардо"/> 
+        <img src="img/г.png" alt="леонардо"/> 
             <p class="f-S15 f-w600">
                 Леонардо ДиКаприо
             </p>
@@ -355,7 +388,7 @@
                     veritatis modi cupiditate!
                 </p>
 
-        <img src="ш.png" alt="люди"/>
+        <img src="img/ш.png" alt="люди"/>
         <p class="greenColor f-S25 f-w500">
             Обратная связь
         </p>
@@ -389,7 +422,7 @@
             <button type="submit">Заказать</button>
         </form>
 
-    <img src="щ.png" alt="карта"/>
+    <img src="img/щ.png" alt="карта"/>
     <footer>
         <img src="logo.png" alt="logo innopolis" title="logo innopolis"/> 
         <p class="f-S14 f-w400">
@@ -398,7 +431,7 @@
             quae quasi esse laudantium earum commodi sit necessitatibus officia deleniti?
         </p>
         <p>
-            <p class="f-S20  f-w400">SITE</p>
+            <p class="f-S20  f-w700">SITE</p>
             <ol class="f-S12 f-w500">
             <li><a href="#block1">Почему мы</a></li>
             <li><a href="#block2">Выберите фильм </a> </li>
@@ -418,7 +451,7 @@
         </p>   
     </footer>
     
-    <img src="з.png" alt="лед"/>
+    <img src="img/з.png" alt="лед"/>
     <p class="f-S48 f-w600">
         Лед
     </p>
@@ -488,7 +521,7 @@
         </ul>
     </div>
 
-    <img src="18.png" alt="живое"/>
+    <img src="img/18.png" alt="живое"/>
         <p class="f-S60 f-w600">Живое</p>
         <span>
             <strong>25 Ноябрь 2019</strong>

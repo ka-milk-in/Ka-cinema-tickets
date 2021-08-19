@@ -1,0 +1,13 @@
+.link-white{
+    display: inline-block;
+    color:#FFFFFF;
+    transition: 0.2s;
+    border-bottom: 1px solid transparent;
+}
+.link-white:hover{
+    color: #A3CC40;
+    border-color: #A3CC40;
+}
+.link-white_big{
+    text-transform: uppercase;
+}
